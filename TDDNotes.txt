@@ -1,0 +1,9 @@
+Week 0 (02/21)
+* I'm starting a TDD program! The book is called "Test-Driven Development with Python". It was
+  available for free online reading here: http://chimera.labs.oreilly.com/books/1234000000754
+* The plan is to spend about 30-45 minutes working on it daily. I need consistency more 
+  than I need bursts of effort.
+* I went through the intro to the book today. I'll start Chapter One tomorrow.
+
+Week 1 (02/22)
+* Lesson 1: Start coding only when you have developed a test and watched it fail

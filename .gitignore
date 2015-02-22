@@ -3,3 +3,6 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
+db.sqlite3
+/superlists/__pycache__/
+*.pyc
