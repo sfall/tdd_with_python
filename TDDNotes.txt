@@ -1,9 +1,16 @@
-Week 0 (02/21)
+## Week 0 (02/21)
 * I'm starting a TDD program! The book is called "Test-Driven Development with Python". It was
-  available for free online reading here: http://chimera.labs.oreilly.com/books/1234000000754
+  available for free online reading [here](http://chimera.labs.oreilly.com/books/1234000000754)
 * The plan is to spend about 30-45 minutes working on it daily. I need consistency more 
   than I need bursts of effort.
 * I went through the intro to the book today. I'll start Chapter One tomorrow.
 
-Week 1 (02/22)
+## Week 1 (02/22)
 * Lesson 1: Start coding only when you have developed a test and watched it fail
+* *Sunday*: The first test was to determine whether or not Django was installed, so the first
+  thing to do was make a file that would only run if Django was installed. The script just
+  opened up a browser with Selenium and tried to open localhost:8000. The assert at the end
+  would fail if the title of the page didn't have "Django" in it. Once the test failed, I
+  ran django-admin.py to initialize a Django app. I ran it, and the test didn't fail!
+* This was a nice intro to the TDD arts. It'll be easy to get into the habit of making
+  functional tests because they are so similar to the style of coding that I'm familiar with.
