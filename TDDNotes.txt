@@ -14,3 +14,29 @@
   ran django-admin.py to initialize a Django app. I ran it, and the test didn't fail!
 * This was a nice intro to the TDD arts. It'll be easy to get into the habit of making
   functional tests because they are so similar to the style of coding that I'm familiar with.
+* Lesson 2: Think of functional tests as stories
+* *Saturday*: The test was set up in comments as a user story: the user goes to a website
+  and does things. The user was represented as the automated browser Selenium.Webdriver.
+  Each of the user's actions will be written out in code for the test. Importantly, with an
+  idea of what we want the user to do and the tests describing how they do it, we can start
+  fleshing out the website to fulfill the terms set out by the test.
+  
+## Week 2 (03/01)
+* I haven't been working on this project as frequently as I intended.
+
+## Week 3 (03/08)
+* Lesson: make sure you review what you’re about to commit before you do it. Make useful commit comments.
+* Django uses a folder named after the project as a configuration holder. The urls.py file is used
+  for routing. Inside of a project's "app" folder, the functions corresponding to the website's pages
+  are defined.
+* Emphasis: **Make tests first, then only make changes that are justified by test failures**
+* It's a good idea to sync up test and app change commits.
+* It seems as though the unit tests are subtests of functional tests. Once the unit tests were
+  developed and passed, a line in a functional one did as well.
+* All done with Chap 3. This served as a useful intro to how apps in Django are arranged.
+* Remember, the manage.py file is used to start the app ("python3 manage.py runserver") and conduct
+  unit tests ("python3 manage.py test")
+* Lesson: by testing even the smallest changes, you never let complexity grow out of control
+* When creating a new app (like 'lists' within 'superlists'), you have to register the app
+  in the settings.py file. This is done by adding the file to the INSTALLED_APPS variable.
+* Lesson: When refactoring, work on either the code or the tests, but not both at once.
