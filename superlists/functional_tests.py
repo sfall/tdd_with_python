@@ -3,7 +3,9 @@ import unittest
 
 class NewVisitorTest(unittest.TestCase):
     def setUp(self):
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.PhantomJS(
+            executable_path="C:\phantomjs-1.9.8-windows\phantomjs.exe"
+        )
         self.browser.implicitly_wait(3)
 
     def tearDown(self):
