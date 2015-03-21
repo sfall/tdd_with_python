@@ -4,9 +4,8 @@ from selenium.webdriver.common.keys import Keys
 
 class NewVisitorTest(LiveServerTestCase):
     def setUp(self):
-        self.browser = webdriver.PhantomJS(
-            executable_path="C:\phantomjs-1.9.8-windows\phantomjs.exe"
-        )
+        self.exec_path = "C:\phantomjs-1.9.8-windows\phantomjs.exe"
+        self.browser = webdriver.PhantomJS(executable_path=self.exec_path)
         self.browser.implicitly_wait(3)
 
     def tearDown(self):
@@ -61,7 +60,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         ## Using a new browser for new session
         self.browser.quit()
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.PhantomJS(executable_path=self.exec_path)
 
         # Francis visits the home page. There is no sign of Edith's list
         self.browser.get(self.live_server_url)
