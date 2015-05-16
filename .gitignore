@@ -9,3 +9,4 @@ db.sqlite3
 /TDDNotes.txt
 /superlists/ghostdriver.log
 /superlists/lists/static/bootstrap/
+/static/
