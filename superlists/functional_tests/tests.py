@@ -19,7 +19,10 @@ class NewVisitorTest(StaticLiveServerTestCase):
             super().tearDownClass()
 
     def setUp(self):
-        self.exec_path = "C:\phantomjs-1.9.8-windows\phantomjs.exe"
+        if sys.platform == 'win32':
+            self.exec_path = "C:\phantomjs-1.9.8-windows\phantomjs.exe"
+        else:
+            self.exec_path = "phantomjs"
         self.browser = webdriver.PhantomJS(executable_path=self.exec_path)
         self.browser.implicitly_wait(3)
 
