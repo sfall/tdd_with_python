@@ -8,7 +8,6 @@ db.sqlite3
 *.pyc
 /TDDNotes.txt
 /superlists/ghostdriver.log
-/superlists/lists/static/bootstrap/
 *.pem
 *.ppk
 /virtualenv/
