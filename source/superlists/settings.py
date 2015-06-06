@@ -20,11 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'by7dm)e#hg^d)=*&_sfr9qghg@!++#=cugj*mc&xj82jdtjew$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+# Needed when DEBUG=False
+ALLOWED_HOSTS = ['sfall.at']
 
 
 # Application definition
