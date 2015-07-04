@@ -7,7 +7,8 @@ db.sqlite3
 /superlists/__pycache__/
 *.pyc
 /TDDNotes.txt
-/superlists/ghostdriver.log
+*.log
 *.pem
 *.ppk
 /virtualenv/
+*.save

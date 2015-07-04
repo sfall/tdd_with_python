@@ -30,7 +30,7 @@ Assume we have a user account at /home/username
 /home/username
 └── sites
     └── SITENAME
-         ├── virtualenv
-         └── source
-             ├── database
-             └── static
+         ├── database
+         ├── static
+         ├── superlists
+         └── virtualenv
