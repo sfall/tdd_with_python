@@ -7,7 +7,8 @@ REPO_URL = 'https://github.com/sfall/tdd_with_python.git'
 def deploy():
     site_folder = '/home/%s/sites/%s' % (env.user, env.host)
     source_folder = site_folder + '/source'
-    _create_directory_structure_if_necessary(site_folder)
+    # Due to how I structured the repo, this isn't necessary
+    #_create_directory_structure_if_necessary(site_folder)
     _get_latest_source(site_folder)
     _update_settings(source_folder, env.host)
     _update_virtualenv(source_folder)
